@@ -1,12 +1,6 @@
-/* *{box-sizing:border-box}*/
-
 /*Design for the choosing quantity of the product*/
 .qty {
   position: relative;
-  /*left:485px; 
-  bottom:180px;
-  height:30px;
-  width:30px;*/
   background: #fff;
   color:#000000;
   display:inline-flex; /*Allows button size to work*/
@@ -18,12 +12,12 @@
 }
 
 .qty:hover{
-  background-color: #fff0f3; /*#bed3b4;*/
+  background-color: #fff0f3;
   color: #fadadd;
 }
 
 .qty:active {
-	background-color: #fff0f3; /*#bed3b4;*/
+	background-color: #fff0f3;
 	color: #fadadd;
 	box-shadow: 0 0px #666;
 	transform: translateY(5px);
@@ -47,8 +41,6 @@
 	position: sticky;
 	background-color: #fadadd;
 	border-top:2px solid black;
-	/*border-left:2px solid black;
-	border-right:2px solid black;*/
 	border-bottom:2px solid black;
 	color: Black;
 	padding: 23.25px;
@@ -60,9 +52,6 @@
 	position: sticky;
 	background-color: #fadadd;
 	border:3px solid black;
-	/*border-left:3px solid black;
-	border-right:3px solid black;
-	border-bottom:3px solid black;*/
 	color: Black;
 	padding: 23.25px;
 	font-size: 16px;
@@ -73,9 +62,6 @@
 	position: relative;
 	background-color: #fadadd;
 	border:2px solid black;
-	/*border-left:3px solid black;
-	border-right:3px solid black;
-	border-bottom:3px solid black;*/
 	color: Black;
 	padding: 23.25px;
 	font-size: 16px;
@@ -86,11 +72,6 @@
 
 .sizeBtn {
   position: relative;
-  /*top: 10px;/*
-  height:30px;
-  width:30px;
-  background: #fadadd;
-  color:#000000;*/
   display:inline-flex; /*Allows button size to work*/
   align-items:center; /*centers icon from the top in button*/
   justify-content:center; /*centers icon from the left in button*/
@@ -100,12 +81,12 @@
 }
 
 .sizeBtn:hover{
-  background-color: #fff0f3; /*#bed3b4;*/
+  background-color: #fff0f3;
   color: #fadadd;
 }
 
 .sizeBtn:active {
-	background-color: #fff0f3; /*#bed3b4;*/
+	background-color: #fff0f3;
 	color: #fadadd;
 	box-shadow: 0 0px #666;
 	transform: translateY(5px);
@@ -114,10 +95,7 @@
 /* After size button gets pressed */
 
 .sizeBtnPressed {
-  position: relative;/*
-  height:30px;
-  width:30px;
-  background: #fadadd;*/
+  position: relative;
   background-color: #fff0f3;
   color: #fadadd;
   display:inline-flex; /*Allows button size to work*/
@@ -144,12 +122,8 @@
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  /*position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;*/
   padding: 16px;
-  color: #000;/*fadadd;*/
+  color: #000;
   background-color:white;
   font-weight: bold;
   font-size: 18px;
@@ -163,11 +137,11 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
 	color: #fadadd;
-	background-color: #fff0f3;/*rgba(0,0,0,0.8);*/
+	background-color: #fff0f3;
 }
 
 .prev:active, .next:active {
-	background-color: #fff0f3; /*#bed3b4;*/
+	background-color: #fff0f3;
 	color: #fadadd;
 	box-shadow: 0 0px #666;
 	transform: translateY(5px);
@@ -211,10 +185,8 @@
 
 .addToCart {
 	position: relative;
-	/*top: 100px;*/
 	width: 100%;
 	font-size: 17px;
-	/*background-color: white;*/
 	height:30px;
 	color:#000;
 	border-radius: 3px;
@@ -225,11 +197,11 @@
 /* On hover, add a black background color with a little bit see-through */
 .addToCart:hover {
 	color: #fadadd;
-	background-color: #fff0f3;/*rgba(0,0,0,0.8);*/
+	background-color: #fff0f3;
 }
 
 .addToCart:active {
-	background-color: #fff0f3; /*#bed3b4;*/
+	background-color: #fff0f3;
 	color: #fadadd;
 	box-shadow: 0 0px #666;
 	transform: translateY(5px);
@@ -246,7 +218,7 @@
 .popup .popuptext {
   visibility: hidden;
   width: 160px;
-  color: #000; /*#fff;*/
+  color: #000;
   text-align: center;
   border-radius: 3px;
   padding: 8px;
@@ -256,18 +228,6 @@
   left: 50%;
   margin-left: -80px;
 }
-
-/* Popup arrow 
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  /*border-color: #555 transparent transparent transparent;
-}*/
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
