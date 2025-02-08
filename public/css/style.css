@@ -31,8 +31,9 @@
 }
 
 .title {
-	
-	height: 65px;
+	position: relative;
+  top: -1.9px;
+	height: 64.7px;
 	width: 265px;
 	border-left:3px solid black;
 	border-top:3px solid black;
