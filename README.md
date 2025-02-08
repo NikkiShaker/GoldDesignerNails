@@ -4,6 +4,11 @@ Gold Designer Nails is a modern e-commerce webpage that sells **press-on nails**
 
 ---
 
+## Link to a video of navigating the Web Store
+https://youtu.be/IIdPL5jti_Q
+
+---
+
 ## ✨ Features  
 - 🛒 **Product Search** – Type into the search bar to find related products instantly.  
 - 🌐 **Built with Modern Web Technologies** – Utilizes JavaScript, Node.js, Express.js, and jQuery.  
