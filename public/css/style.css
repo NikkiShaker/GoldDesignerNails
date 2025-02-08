@@ -1,0 +1,338 @@
+.button {
+    background-color: #fadadd; /*#fadadd;*/
+    font-size: 20px;
+    /*color: #ffffff;*/
+    padding: 10px;
+    /*border-radius: 10px;*/
+	box-shadow: 0 9px #999;
+	cursor: pointer;
+	border:4px solid black;
+	transition: 0.06s all;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+    /*border: 3px solid #fadadd;*/
+}
+
+.button:hover {
+    background-color: #fff0f3; /*#bed3b4;#bfd9ba*/
+    color: #fadadd;
+}
+
+.button:active {
+	background-color: #fff0f3; /*#bed3b4;*/
+	color: #fadadd;
+	box-shadow: 0 5px #666;
+	transform: translateY(5px);
+}
+
+.img {
+  /*border: 1px solid #ddd;
+  border-radius: 4px;*/
+  padding: 5px;
+  height: 215px;
+  width: 285px;
+  border:2px solid black;
+}
+
+.title {
+	
+	height: 65px;
+	width: 265px;
+	border-left:3px solid black;
+	border-top:3px solid black;
+	border-bottom:3px solid black;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 12px;
+
+}
+
+h2 {
+    font-family: 'Zeyada';
+	src: url('https://fonts.googleapis.com/css?family=Zeyada'); 
+	font-size: 22px;
+}
+
+p {
+	font-family : "Arial";
+}
+/*
+.button {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}*/
+
+/*Dropdown stuff*/
+
+.allDrops {
+	background-color: #fadadd;
+	border-top:3px solid black;
+	border-left:3px #fadadd;
+	border-right:3px #fadadd;
+	border-bottom:3px solid black;
+	color: Black;
+	padding: 23.25px;
+	font-size: 16px;
+	cursor: pointer;
+	
+}
+
+.allDrops:hover, .allDrops:focus {
+	background-color: #fff0f3; /*bed3b4;*/
+	color: #fadadd;
+	/*border-bottom-color:#fadadd;*/
+}
+/*
+.dropbtn {
+  background-color: #fadadd;
+  border-top:3px solid black;
+  border-left:3px #fadadd;
+  border-right:3px #fadadd;
+  border-bottom:3px solid black;
+  color: Black;
+  padding: 23.25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropbtn2 {
+  background-color: #fadadd;
+  border-top:3px solid black;
+  border-left:3px #fadadd;
+  border-right:3px #fadadd;
+  border-bottom:3px solid black;
+  color: Black;
+  padding: 23.25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropbtn3 {
+  background-color: #fadadd;
+  border-top:3px solid black;
+  border-left:3px #fadadd;
+  border-right:3px #fadadd;
+  border-bottom:3px solid black;
+  color: Black;
+  padding: 23.25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.notDropbtn {
+  background-color: #fadadd;
+  border-top:3px solid black;
+  border-left:3px #fadadd;
+  border-right:3px #fadadd;
+  border-bottom:3px solid black;
+  color: Black;
+  padding: 23.25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+	background-color: #fff0f3;
+	color: #fadadd;
+}
+.dropbtn2:hover, .dropbtn:focus {
+	background-color: #fff0f3;
+	color: #fadadd;
+}
+
+.dropbtn3:hover, .dropbtn:focus {
+	background-color: #fff0f3; 
+	color: #fadadd;
+	
+}
+
+.notDropbtn:hover, .dropbtn:focus {
+	
+	background-color: #fff0f3;
+	color: #fadadd;
+}*/
+
+/*#bed3b4;*/
+/*border-bottom-color:#fadadd;*/
+
+.relBlock {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown {
+  /*position: relative;*/
+  left:278px; 
+  top:-95px;
+  /*display: inline-block;*/
+}
+
+.dropdown2 {
+  /*position: relative;*/
+  left:274px; 
+  top:-95px;
+  /*display: inline-block;*/
+}
+
+.tutorials {
+  /*position: relative;*/
+  left:270px; 
+  top:-95px;
+  /*display: inline-block;*/
+}
+
+.aboutMe {
+  /*position: relative;*/
+  left:-5px; 
+  top:0px;
+  /*display: inline-block;*/
+  /*border-right:3px solid Black;*/
+}
+
+.searchBar {
+  /*position: relative;*/
+  left:-9px; 
+  top:0px;
+  /*display: inline-block;*/
+}
+
+.magnify {
+  /*position: relative;*/
+  right:4px; 
+  /*top:-95px;*/
+  /*display: inline-block;*/
+  border-right:3px solid Black;
+ 
+}
+
+/*design for the login icon in the top-right corner*/
+.cart {
+  position: relative;
+  left:200px; 
+  top:0px;
+  height:30px;
+  width:30px;
+  background: #fadadd;
+  color:#000000;
+  display:inline-flex; /*Allows button size to work*/
+  align-items:center; /*centers icon from the top in button*/
+  justify-content:center; /*centers icon from the left in button*/
+  cursor:pointer; /*Cursor turns into pointer*/
+  border-radius:10%; /*50% makes button into circle shape*/
+  box-shadow: 0 3px #666;
+}
+
+.cart:hover{
+  background-color: #fff0f3; /*#bed3b4;*/
+  color: #fadadd;
+}
+
+.cart:active {
+	background-color: #fff0f3; /*#bed3b4;*/
+	color: #fadadd;
+	box-shadow: 0 0px #666;
+	transform: translateY(5px);
+}
+
+/*design for the login icon in the top-right corner*/
+.login {
+  position: relative;
+  left:210px; 
+  top:0px;
+  height:30px;
+  width:30px;
+  background: #fadadd;
+  color:#000000;
+  display:inline-flex; /*Allows button size to work*/
+  align-items:center; /*centers icon from the top in button*/
+  justify-content:center; /*centers icon from the left in button*/
+  cursor:pointer; /*Cursor turns into pointer*/
+  border-radius:10%; /*50% makes button into circle shape*/
+  box-shadow: 0 3px #666;
+}
+
+.login:hover{
+  background-color: #fff0f3; /*#bed3b4;*/
+  color: #fadadd;
+}
+
+.login:active {
+	background-color: #fff0f3; /*#bed3b4;*/
+	color: #fadadd;
+	box-shadow: 0 0px #666;
+	transform: translateY(5px);
+}
+
+.addButton {
+	position: relative;
+	top:-30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  border: 3px solid #fadadd;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown2-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  border: 3px solid #fadadd;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.tutorials-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  border: 3px solid #fadadd;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #000; /*#f3aac0; #f5bbcc;*/
+  padding: 12px 16px;
+  border: 1px solid #fadadd;
+  text-decoration: none;
+  font-family: Arial;
+  display: block;
+}
+
+
+.dropdown2-content a {
+  color: #000; /*#f3aac0; #f5bbcc;*/
+  padding: 12px 16px;
+  border: 1px solid #fadadd;
+  text-decoration: none;
+  font-family: Arial;
+  display: block;
+}
+
+.tutorials-content a {
+  color: #000; /*#f3aac0;*/
+  padding: 12px 16px;
+  border: 1px solid #fadadd;
+  text-decoration: none;
+  font-family: Arial;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #fadadd; color: #000;}/* #ddd */
+.dropdown2 a:hover {background-color: #fadadd; color: #000;}
+.tutorials a:hover {background-color: #fadadd; color: #000;}
+
+.show {display: block;}

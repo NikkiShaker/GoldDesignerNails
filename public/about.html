@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "/css/style.css" />
+		<link rel = "stylesheet" href = "/css/prodDisplay.css" />	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+		<script src="/client.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<div id = "root"></div>	
+		<!-- <meta name = "viewport" content = "width=device-width,initial-scale=1">-->
+	</head>
+	
+	<body background = "\pictures\sky3.png"> <!--background = "pictures\sky3.png"--> 
+		
+		<nav id = "theNav"></nav>
+		<div id = "nailSets" class = "addButton"></div>
+		<h1>About the Creator</h1>	
+		<!--<meta name="viewport" content="width=device-width"></meta>-->
+	
+		<script>			
+			
+			$(document).ready(function () {
+				$("#theNav").load("/navBar.html");
+			});
+			
+			/* Calls aboutMe() function search input is empty*/
+			$('#search').keyup(function(event) {
+				console.log("$('#search').val().length: " + $('#search').val().length)
+			   if($('#search').val().length == 0) {       
+				 aboutMe();
+			   }
+			});	
+								
+		</script>
+		
+	</body>	
+	
+</html>

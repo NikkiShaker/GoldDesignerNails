@@ -1,0 +1,13 @@
+- Editing CSS files - part 1 (Sept 16th, 2024)
+
+- Added a sidebar called 'Cart' (Aug 20th, 2024)
+
+-  Hard coded product details in HTML file (Aug 1st, 2024)
+
+- The product display page is more scalable now (July 30th, 2024)
+
+- Added nail length options when displaying the product (July 28th, 2024)
+
+- Using jQuery to load HTML file into another file (July 25th, 2024)
+
+- Navigation bar is now dynamically coded with JavaScript (July 24th, 2024)

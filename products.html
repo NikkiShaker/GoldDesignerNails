@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<link rel = "stylesheet" href = "/css/style.css" /> 
+		<script src="/client.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<div id = "root"></div>
+	
+	</head>
+	
+	<body background = "\pictures\sky3.png" onload = "loadPage()">
+	
+		<!-- <button onclick="yetAnotherFunction()">A Button</button> -->
+		
+		<nav id = "nav"></nav>		
+		
+		<script>
+			$(document).ready(function () {
+				$("#nav").load("/navBar.html");
+			});
+						
+		</script>
+		
+		<div id = "nailSets" class = "addButton"></div>
+		
+	</body>
+	
+	
+</html>

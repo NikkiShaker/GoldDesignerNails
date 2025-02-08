@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		
+		<link rel = "stylesheet" href = "/css/style.css" /> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Zeyada" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="/client.js"></script>
+		<div id = "root"></div>
+	
+	</head>
+	
+	<body>
+		
+		<img id = "brand" onclick="home()" title="Home" src="/pictures/Title1.jpg" class = "title">
+		
+		<nav id = "nav">
+			
+			<div class="dropdown relBlock" id = "">
+				<button onclick="myFunction()" class="dropbtn allDrops">Nail Sets</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a id = "home" href="#home">Current Sets</a>
+					<a id = "about" href="#about">Seasonal Selection</a>
+					<a id = "contact" href="#contact">Make a custom set!</a>
+				</div>
+			</div>
+			
+			<div class="dropdown2 relBlock">
+				<button onclick="myFunction2()" class="dropbtn2 allDrops">Accessories</button>
+				<div id="dropdown2" class="dropdown2-content">
+					<a href="#glue">Nail Glue</a>
+					<a href="#care">Nail Care</a>
+					<a href="#idk">idk</a>
+				</div>
+			</div>
+			
+			<div class="tutorials relBlock">
+				<button onclick="myFunction3()" class="dropbtn3 allDrops">How to</button>
+				<div id="tutorials" class="tutorials-content">
+					<a href="#apply">Apply Press-ons</a>
+					<a href="#remove">Remove Press-ons</a>
+					<a href="#clean">Clean your nails</a>
+				</div>
+			</div>
+						
+			<a class="tutorials relBlock" href = "/about.html"> <!-- aboutMe -->
+				<div class="aboutMe relBlock">
+					<button class="notDropbtn allDrops">About the Creator</button>
+				</div>
+			</a>
+			
+			<div class="tutorials relBlock">	<!-- searchBar -->
+			
+				<div class="searchBar relBlock">
+			
+					<div class="search-wrapper">
+							<input class="notDropbtn allDrops" placeholder="Search..." type="search" id = "search" onsearch="OnSearch (this)"> <!--  -->
+						<div id = "mag" onclick = "buttonInfo()" class="magnify relBlock"><button type="submit" class="notDropbtn allDrops"><i class="fa fa-search" aria-hidden="true"></i></button></div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="tutorials relBlock">
+				<button title="Cart" class="cart"><i class="fa fa-shopping-cart"></i></button>
+			</div>
+
+			<div class="tutorials relBlock">
+				<button title="Login" class="login"><i class="fa-solid fa-user"></i></button>
+			</div>
+			
+			<!-- This script is used so that you can press the search button by pressing enter -->
+			<script>
+				var input = document.getElementById("search");
+				input.addEventListener("keypress", function(event) {
+				  if (event.key === "Enter") {
+					event.preventDefault();
+					document.getElementById("mag").click();
+				  }
+				});
+				
+				var lastentry = "";
+
+				$('#search').keyup(function(event) {
+				   if($('#search').val() != lastentry) {       
+					 loadPage();
+				   }
+				   lastentry = $('#search').val()
+				});			
+
+				function OnSearch (input) {
+				
+					buttonInfo();
+					//console.log("HEYYYYYYYYYY: " + document.getElementById("search").innerHTML);
+				}
+		
+			</script>
+			
+		</nav>		
+				
+	</body>
+	
+	
+</html>

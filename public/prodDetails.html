@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "/css/style.css" />
+		<link rel = "stylesheet" href = "/css/prodDisplay.css" />	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+		<script src="/client.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<div id = "root"></div>	
+		<!-- <meta name = "viewport" content = "width=device-width,initial-scale=1">-->
+	</head>
+	
+	<body background = "\pictures\sky3.png" onload = "productInfo()"> <!--background = "pictures\sky3.png"--> 
+		
+		<nav id = "theNav"></nav>
+		<div id = "nailSets" class = "addButton"></div>
+		
+		<br />
+		<br />
+		
+		<!-- Sidebar  -->
+		<div class="sidenav" id = "sidenav">
+			<h5 style = "position:relative; text-align: center; font-style:italic; font-family:serif; font-size:35px; font-weight:10; bottom: 50px;">Cart</h5>
+			<button onclick = "closeSideBar()" class = "addToCart" style = "position:relative; width: 60px; font-family:arial; font-size:15px; font-weight:50px; float: right; right: 12px; bottom: 170px;">Close</button>
+		</div>
+
+		<div id = "details" style = "position:relative; bottom:60px;">
+			<div id = "prodPics" class='displayBorder container' style = "position:relative; width:96%;">
+				<div>
+					<div class = "slideshow-container">
+					
+						<!-- Previous button -->
+						<div style = "position:relative; right: 10px; top:170px; border-radius: 10px;"><button class="prev" onclick="plusSlides(-1)">&#10094;</button></div>
+						
+						<div id = "allPics"></div>	
+						
+						<!-- Next button -->
+						<div style = "position:relative; left: 10px; top:170px; border-radius: 10px;"><button class="next" onclick="plusSlides(1)">&#10095;</button></div>
+						
+						
+						<br/>
+											
+					</div>
+					
+					<!-- The dots/circles -->
+					<div id = "allDots" style="text-align:center;"></div>
+				</div>
+								
+				<div id = "tContainer" style = "position:relative; width:69%;">
+					<div id = "title" class = 'displayProduct' style = "position:relative; font-style:italic; font-family:serif; font-size:22px; font-weight:10;"></div>
+					
+					<div id = "price" style = "position:relative; font-family:times new roman; font-size:19px; left:92%; bottom:11.5%;"></div>
+				
+					<div id = "nailLength" style= "position:relative;"></div>
+					
+					<div id = "nailShape" style = "position:relative; top:10%;"></div>
+					
+					<div id = "quantity" style = "position:relative; top:15%">
+					
+						Quantity:
+						
+						<br/>
+						<br/>
+						
+						<div id = "changeQty" class = "container">
+							
+							<button id = "less" class = "qty" style = "position:relative; font-size:35px; font-weight:300;">							
+								<div id = "lessIcon" style = "position:relative; bottom:2.5px; left:0.1px;">-</div>
+							</button>
+							
+							<div id = "qtyValue" style = "position:relative; top:5px;">1</div>
+							
+							<button id = "more" class = "qty" style = "position:relative; font-size:30px;">
+								<div id = "moreIcon" style = "position:relative; width:13px; right:2.2px; top:2px;">+</div>
+							</button>
+							
+						</div>
+						
+					</div>
+
+					<br />	
+					
+					<button class = "addToCart popup" onclick = "addToCart()" style = "top: 90px">
+						<i class="fa fa-shopping-cart" style = "position:relative; right:10px; top:1px;"></i>
+						<h5 style = "display:inline; fontSize = 15px";>Add To Cart</h5>
+						<span class="popuptext" id="myPopup" style = "border-style:double; border-color:#000; border-width: 7px;"></span>
+					</button>
+					<!-- <button class = "addToCart" onclick = "addToWishlist()" style = "top:90px; background-color: #fff0f3;">ADD TO WISHLIST</button> -->
+				</div>
+			</div>
+						
+		</div> 
+						
+		<!--<meta name="viewport" content="width=device-width"></meta>-->
+	
+		<script>			
+			
+			$(document).ready(function () {
+				$("#theNav").load("/navBar.html");
+			});
+			
+			// When the user clicks on <div>, open the popup
+			/*function popUp() {
+			  var popup = document.getElementById("myPopup");
+			  popup.classList.toggle("show");
+			}*/
+			
+			function closeSideBar()
+			{
+				document.getElementById("sidenav").style.display = "none";
+			}
+								
+		</script>
+		
+		<style>
+			.sidenav {
+				position: fixed;
+				height: 94.5%;
+				width: 460px;
+				z-index: 1;
+				bottom: 0px;
+				right: 0px;
+				background-color: #fadadd;
+				/*overflow-x: hidden;*/
+				padding-top: 20px;
+				border: solid 3px black;
+				border-style: double;
+				border-width: 8px;
+				display: none;
+			}
+
+			.sidenav p {
+				padding: 6px 8px 6px 16px;
+				color: #818181;
+				display: block;
+			}
+
+			.sidenav p:hover {
+			  color: white;
+			}
+/*
+			.main {
+			  margin-left: 160px; /* Same as the width of the sidenav */
+			  font-size: 28px; /* Increased text to enable scrolling */
+			  padding: 0px 10px;
+			}
+			@media screen and (max-height: 450px) {
+			  .sidenav {padding-top: 15px;}
+			  .sidenav p {font-size: 18px;}
+			}*/
+		</style>
+		
+	</body>	
+	
+</html>
