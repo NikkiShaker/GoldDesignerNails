@@ -62,8 +62,6 @@ function yetAnotherFunction(){
 }
 
 function loadPage(){
-	// let script = window.location.href;
-	//console.log("script: " + script);
 	
 	var startTime = performance.now();
 
@@ -77,7 +75,6 @@ function loadPage(){
 
 function sizeButtonPressed(currentSizeBtn)
 {
-	//console.log("currentSizeBtn: " + currentSizeBtn);
 	let pressedButton = document.getElementById(currentSizeBtn);
 		
 	let nailLengths = document.getElementById("nailLength"); 
@@ -105,11 +102,6 @@ function sizeButtonPressed(currentSizeBtn)
 function plusSlides(n) {
 	let slideIndex = document.getElementById("allPics");
 	console.log("n 107: " + n);
-	//console.log("slideIndex 116: " + slideIndex.value);
-	
-	//let anotherIndex = document.getElementById("allPics");
-	//console.log("anotherIndex: " + anotherIndex.value);
-	//slideIndex += n;
 	slideIndex.value = Number(slideIndex.value) + n;
 	
 	showSlides(slideIndex.value);
@@ -118,7 +110,6 @@ function plusSlides(n) {
 // Thumbnail image controls
 function currentSlide(n) {
 	let slideIndex = document.getElementById("allPics");
-	// slideIndex = n
 	slideIndex.value = n;
 	console.log("slideIndex.value: " + slideIndex.value);
 	showSlides(slideIndex.value);
@@ -126,14 +117,12 @@ function currentSlide(n) {
 
 function showSlides(n) {
 	let slideIndex = document.getElementById("allPics");
-	//console.log("slideIndex 130: " + slideIndex);
 	let i;
 	let slides = document.getElementsByClassName("mySlides");
 	let dots = document.getElementsByClassName("dot");
 		
 	if (Number(slideIndex.value) > slides.length) 
 	{
-		//slideIndex = 1;
 		console.log("hi");
 	}
 	if (n > slides.length) 
@@ -144,7 +133,6 @@ function showSlides(n) {
 	if (n < 1)
 	{
 		slideIndex.value = slides.length;
-		//console.log("slideIndex: " + slideIndex);
 	}
 	
 	for (i = 0; i < slides.length; i++) {
@@ -154,9 +142,7 @@ function showSlides(n) {
 	for (i = 0; i < dots.length; i++) {
 		dots[i].className = dots[i].className.replace(" active", "");
 	}
-		
-	//slides[0].style.display = "block";
-	//dots[0].className += " active";
+
 	slides[(Number(slideIndex.value))-1].style.display = "block";
 	dots[(Number(slideIndex.value))-1].className += " active";
 	
@@ -166,7 +152,6 @@ function addToCart()
 {	
 	let popup = document.getElementById("myPopup");
 	popup.innerText = "Please choose a nail length";
-	//popup.classList.toggle("show");
 			
 	let canAdd = false; 
 	// We must check to see if a specific nail length has been chosen
@@ -208,10 +193,11 @@ function productInfo()
 {
 	let href = window.location.href;
 	let hrefArray = href.split("/");
+
+	let allNailSets = document.getElementById("nailSets");
+	allNailSets.innerHTML = "";
 	
 	let prodID = hrefArray[hrefArray.length-1]; // Get ID of product
-	
-	// console.log("prodID: " + prodID + " is of type " + typeof(prodID));
 		
 	req = new XMLHttpRequest();
 	req.onreadystatechange = function() {
@@ -294,7 +280,6 @@ function productInfo()
 			let nailShape = document.getElementById('nailShape');
 			nailShape.appendChild(document.createTextNode("Shape: " + product.shape));
 			nailShape.style.position = 'relative';
-			//nailShape.style.fontFamily = 'arial';
 						
 			let less = document.getElementById("less");
 			
