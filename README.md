@@ -1,6 +1,6 @@
 # Gold Designer Nails 
 
-Gold Designer Nails is a modern e-commerce webpage that sells **press-on nails** and other nail products. The application is built using **JavaScript, HTML5, CSS3, Node.js, Express.js, jQuery, and JSON**. It features a **search bar** that dynamically filters products, making it easy for customers to find what they need.  
+Gold Designer Nails is a modern e-commerce webpage I created that sells **press-on nails** and other nail products. The application is built using **JavaScript, HTML5, CSS3, Node.js, Express.js, jQuery, and JSON**. It features a **search bar** that dynamically filters products, making it easy for customers to find what they need.  
 
 ---
 
@@ -10,10 +10,18 @@ https://youtu.be/IIdPL5jti_Q
 ---
 
 ## ✨ Features  
-- 🛒 **Product Search** – Type into the search bar to find related products instantly.  
+- 🛒 **Product Search** – Customers can type into the search bar to find related products instantly.  
 - 🌐 **Built with Modern Web Technologies** – Utilizes JavaScript, Node.js, Express.js, and jQuery.  
 - 🔗 **HTTP Requests** – Uses **POST** and **GET** requests for fetching and handling data.  
 - 💾 **JSON Data Storage** – Manages product listings and other data in JSON format.
+
+---
+
+## 🚀 Future Enhancements  
+Planned improvements include:  
+- 👤 **User Accounts & Authentication** – Users will be able to create accounts and log in.  
+- 🛍️ **Shopping Cart & Secure Checkout** – Customers can add items to their cart and shop securely.  
+- 🔒 **Financial Security** – Ensuring safe transactions without exposing sensitive financial details.  
 
 ---
 
@@ -24,14 +32,6 @@ The application is built with:
 - Data Handling: JSON
 - Version Control: Git & GitHub
 - Networking: HTTP POST & GET Requests
-
----
-
-## 🚀 Future Enhancements  
-Planned improvements include:  
-- 👤 **User Accounts & Authentication** – Users will be able to create accounts and log in.  
-- 🛍️ **Shopping Cart & Secure Checkout** – Customers can add items to their cart and shop securely.  
-- 🔒 **Financial Security** – Ensuring safe transactions without exposing sensitive financial details.  
 
 ---
 
