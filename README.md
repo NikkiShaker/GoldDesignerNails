@@ -9,23 +9,23 @@ https://youtu.be/IIdPL5jti_Q
 
 ---
 
-## ✨ Features  
-- 🛒 **Product Search** – Customers can type into the search bar to find related products instantly.  
-- 🌐 **Built with Modern Web Technologies** – Utilizes JavaScript, Node.js, Express.js, and jQuery.  
-- 🔗 **HTTP Requests** – Uses **POST** and **GET** requests for fetching and handling data.  
-- 💾 **JSON Data Storage** – Manages product listings and other data in JSON format.
+## Features  
+- **Product Search** – Customers can type into the search bar to find related products instantly.  
+- **Built with Modern Web Technologies** – Utilizes JavaScript, Node.js, Express.js, and jQuery.  
+- **HTTP Requests** – Uses **POST** and **GET** requests for fetching and handling data.  
+- **JSON Data Storage** – Manages product listings and other data in JSON format.
 
 ---
 
-## 🚀 Future Enhancements  
+## Future Enhancements  
 Planned improvements include:  
-- 👤 **User Accounts & Authentication** – Users will be able to create accounts and log in.  
-- 🛍️ **Shopping Cart & Secure Checkout** – Customers can add items to their cart and shop securely.  
-- 🔒 **Financial Security** – Ensuring safe transactions without exposing sensitive financial details.  
+- **User Accounts & Authentication** – Users will be able to create accounts and log in.  
+- **Shopping Cart & Secure Checkout** – Customers can add items to their cart and shop securely.  
+- **Financial Security** – Ensuring safe transactions without exposing sensitive financial details.  
 
 ---
 
-## 📂 Technologies Used
+## Technologies Used
 The application is built with:
 - Frontend: HTML5, CSS3, JavaScript, jQuery
 - Backend: Node.js, Express.js
@@ -35,7 +35,7 @@ The application is built with:
 
 ---
 
-## 🛠️ Installation & Setup  
+## Installation & Setup  
 To run the project locally, clone the repository, install dependencies, and start the server using the following commands:  
 
 ```bash
